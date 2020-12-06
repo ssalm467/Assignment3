@@ -1,0 +1,121 @@
+html, body{
+    height: 90%;
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.64fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 1.5fr 1.5fr 0.25fr;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    grid-gap: 0.1rem;
+}
+
+/*Header*/
+nav{
+    background: #DDAF94;
+    grid-area: nav;
+    font-size: 44px;
+    text-align: center;
+    
+}
+
+/*Main*/
+#main{
+    background: #DEB887;
+    grid-area: main;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*Side-menu*/
+aside{
+    background: #DDAF94;
+    grid-area: sidebar;
+    font-size: 30;
+}
+
+/*Link*/
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color:green;
+}
+
+h2{
+  text-align: center; 
+  color: black;
+}
+
+/*Side*/
+.navLI{
+    height: 100px;
+    width:auto;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: left;    
+}
+
+/*Content 1*/
+#content1{
+    background: #FFEBCD;
+    grid-area: content1;
+    line-height: 2;
+}
+
+/*Content 2*/
+#content2{
+    background: #DEB887;
+    grid-area: content2;
+    line-height: 2;
+}
+
+/*Content 3*/
+#content3{
+    background: #FFEBCD	;
+    grid-area: content3;
+    line-height: 2;
+}
+
+/*Content 4*/
+footer{
+    background: #DDAF94;
+    grid-area: footer;
+    line-height: 2.3;
+}
+
+/*Links*/
+a:link {
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: maroon;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: underline;
+  }

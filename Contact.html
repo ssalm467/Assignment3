@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Saad" content="Contact Me">
+    
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="CSS/Contact.css">
+
+        
+    </head>
+    
+    <body>
+        <div class="container">
+        <form method="post" action="mailto:saad.salman.jan@gmail.com">
+    
+
+<!--Inquiry-->
+    <h1>Inquiry</h1>
+        <label for="fname">First Name:</label>   
+        <input type="text" id="fname" name="firstname" placeholder="John" required>
+        
+    <br>
+        <label for="lname">Last Name:</label>   
+        <input type="text" id="lname" name="lastname" placeholder="Smith" required>
+        
+        <br>
+<!-- Phone-->
+    <label for="tel">Phone:</label>
+    &nbsp; &nbsp; &nbsp; 
+    <input type="tel" id="tel" name="tel" placeholder="5555555555" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" required>  
+    
+    <br>
+<!-- Email-->
+    <label>Email:</label>
+    &nbsp; &nbsp; &nbsp; 
+    <input type="email" id="email" name="email" placeholder="john.smith@gmail.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
+        
+    <br>
+<!--Subject-->
+    <label for="subject">Subject:</label>
+    
+    <br>
+    <textarea id="subject" name="subject" placeholder="Enter Message Here..." style="height:200px; width: 600px;"></textarea>
+            
+    <br>
+
+            <input type = "submit" value = "Enter">
+
+            <input type = "reset" value = "Clear">
+
+    <!--Footer-->
+        <footer>
+            <p>Saad Inc.&copy;</p>
+        </footer>
+    
+    
+    </form>
+    </div>
+    </body>
+</html>
